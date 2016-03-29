@@ -1,2 +1,5 @@
 # byte-compiled python files
 *.pyc
+
+# Output is not important in this branch
+output/*
