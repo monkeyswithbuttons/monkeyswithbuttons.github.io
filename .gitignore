@@ -3,3 +3,9 @@
 
 # Output is not important in this branch
 output/*
+
+# Rope
+.ropeproject
+
+# PID files
+*.pid

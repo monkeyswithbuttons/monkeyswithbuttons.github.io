@@ -4,6 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Greg Trahair'
 SITENAME = u'Monkeys with Buttons'
+#SITEURL = 'http://monkeyswithbuttons.com'
 SITEURL = ''
 
 PATH = 'content'
@@ -38,4 +39,9 @@ DEFAULT_PAGINATION = 10
 STATIC_PATHS = ['images', 'extra/CNAME']
 EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
 
-THEME = 'simple'
+THEME = 'theme/monkeyswithbuttons'
+
+#GOOGLE_ANALYTICS = True
+
+YEAR_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/index.html'
+MONTH_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/{date:%b}/index.html'
