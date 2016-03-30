@@ -1,10 +1,10 @@
 Using iptables-save
 ###################
 :date: 2010-12-09 11:13
-:author: geogdog
+:author: Greg Trahair
 :category: Devops, System Engineering
 :slug: using-iptables-save
-:status: published
+:status: draft
 
 | I just lost my netfilter persistance file (/etc/sysconfig/iptables)
   becuase I used /usr/bin/system-config-securitylevel-tui.

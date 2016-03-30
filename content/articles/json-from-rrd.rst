@@ -1,11 +1,11 @@
 JSON from RRD
 #############
 :date: 2012-03-30 13:51
-:author: geogdog
+:author: Greg Trahair
 :category: Devops
 :tags: rrdtool
 :slug: json-from-rrd
-:status: published
+:status: draft
 
 Towards the end of January 2012, Tobi Oetiker released rrdtool 1.4.6.
 This release contained a community submitted patch to allow export of

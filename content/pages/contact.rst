@@ -8,5 +8,6 @@ Contact
 :slug: contact
 :authors: Greg Trahair
 :summary: Contact
+:status: draft
 
 Contact Monkeys with Buttons

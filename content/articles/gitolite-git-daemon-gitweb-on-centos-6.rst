@@ -1,11 +1,11 @@
 gitolite, git-daemon & gitweb on CentOS 6
 #########################################
 :date: 2013-02-07 21:05
-:author: geogdog
+:author: Greg Trahair
 :category: Devops, Featured, How To, How To - Linux
 :tags: centos, git-daemon, gitolite, gitweb
 :slug: gitolite-git-daemon-gitweb-on-centos-6
-:status: published
+:status: draft
 
 I've found many tutorials on how to accomplish this on Debian/Ubuntu
 systems, but not RHEL.

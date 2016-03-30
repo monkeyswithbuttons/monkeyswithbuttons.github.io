@@ -3,7 +3,7 @@ About
 :date: 2011-12-19 12:22
 :author: geogdog
 :slug: about
-:status: published
+:status: draft
 
 Hi, I'm Greg.
 

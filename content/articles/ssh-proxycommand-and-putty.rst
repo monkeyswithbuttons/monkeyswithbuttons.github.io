@@ -1,11 +1,11 @@
 ssh ProxyCommand and PuTTY
 ##########################
 :date: 2010-10-01 09:16
-:author: geogdog
+:author: Greg Trahair
 :category: How To - Linux
 :tags: proxy, PuTTY, remote access, security, ssh, ssh-proxy
 :slug: ssh-proxycommand-and-putty
-:status: published
+:status: draft
 
 I've had problems in the past, where I've had so many NAT configurations
 to get into various machines in my small, home network. Using the ssh

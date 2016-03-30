@@ -1,10 +1,10 @@
 Disable driver signing - windows 7
 ##################################
 :date: 2010-08-27 09:03
-:author: geogdog
+:author: Greg Trahair
 :category: How To - Windows 7, Uncategorized
 :slug: disable-driver-signing-windows-7
-:status: published
+:status: draft
 
 I had a problem installing the tun/tap adapter for openVPN on my windows
 7 machines. Windows complains about the driver not being digitally

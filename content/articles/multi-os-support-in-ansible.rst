@@ -1,11 +1,11 @@
 Multi OS Support in Ansible
 ###########################
 :date: 2014-04-03 18:30
-:author: geogdog
+:author: Greg Trahair
 :category: Ansible, Patterns
 :tags: ansible-patterns
 :slug: multi-os-support-in-ansible
-:status: published
+:status: draft
 
 In the last 6 months I've been diving into Ansible as a part of my daily
 work. I have to support RedHat (and CentOS) along with Ubuntu in a

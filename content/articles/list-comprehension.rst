@@ -1,11 +1,11 @@
 List Comprehension
 ##################
 :date: 2012-02-21 22:23
-:author: geogdog
+:author: Greg Trahair
 :category: Devops, Featured, Python
 :tags: lists, python
 :slug: list-comprehension
-:status: published
+:status: draft
 
 Why is it better to use list comprehension instead of *map + lambda*?
 

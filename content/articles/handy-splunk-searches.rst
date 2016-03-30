@@ -1,10 +1,10 @@
 Handy Splunk Searches
 #####################
 :date: 2011-06-29 20:13
-:author: geogdog
+:author: Greg Trahair
 :category: How To
 :slug: handy-splunk-searches
-:status: published
+:status: draft
 
 The idea of this post is only to keep track of the Splunk searches that
 I use frequently that are generic enough to just work on other systems

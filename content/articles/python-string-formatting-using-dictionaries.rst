@@ -1,11 +1,11 @@
 Python string formatting using dictionaries
 ###########################################
 :date: 2012-01-02 20:51
-:author: geogdog
+:author: Greg Trahair
 :category: Devops, Python
 :tags: snippets
 :slug: python-string-formatting-using-dictionaries
-:status: published
+:status: draft
 
 I've started using the string formatting dictionaries and never looked
 back.

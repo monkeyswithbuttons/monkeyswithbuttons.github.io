@@ -1,10 +1,10 @@
 Capacity Planning your Virtualisation Setup
 ###########################################
 :date: 2010-08-12 19:33
-:author: geogdog
+:author: Greg Trahair
 :category: Devops, System Engineering
 :slug: capacity-planning-your-virtualisation-setup
-:status: published
+:status: draft
 
 | Everybody wants servers now!
 |  Now that servers are virtual, everybody knows you can click a button
