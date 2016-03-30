@@ -1,45 +1,28 @@
 {% extends "base.html" %}
 {% block content %}
+<section id="content">
+{% block content_title %}
+<h2>All articles</h2>
+{% endblock %}
 
-
-  <div class="container">
-    <br><br>
-    <h1 class="header center blue-grey-text">Simple IT Solutions</h1>
-    <div class="row center">
-      <h5 class="header col s12 light">A modern approach to traditional IT problems</h5>
-    </div>
-    <br><br>
-  </div>
-
-    
-
-
-
-
-  <div class="container">
-    <!-- Page Content goes here -->
-    <div class="row">
-      <div class="center promo promo-example">
-        <div class="col s4">
-            <i class="large material-icons">new_releases</i>
-            <p class="promo-caption">No Nonsense</p>
-            <p class="light center">
-
-            </p>
-        </div>
-        <div class="col s4">
-            <i class="large material-icons">lock_outline</i>
-            <p class="promo-caption">Reliable</p>
-            <p class="light center">
-            </p>
-        </div>
-        <div class="col s4">
-            <i class="large material-icons">thumb_up</i>
-            <p class="promo-caption">Trustworthy</p>
-            <p class="light center">
-            </p>
-        </div>
-      </div>
-    </div>
-  </div>
+<ol id="post-list">
+{% for article in articles_page.object_list %}
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2> </header>
+                <footer class="post-info">
+                    <abbr class="published" title="{{ article.date.isoformat() }}"> {{ article.locale_date }} </abbr>
+                    <address class="vcard author">By
+                    {% for author in article.authors %}
+                        <a class="url fn" href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>
+                    {% endfor %}
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> {{ article.summary }} </div><!-- /.entry-content -->
+        </article></li>
+{% endfor %}
+</ol><!-- /#posts-list -->
+{% if articles_page.has_other_pages() %}
+    {% include 'pagination.html' %}
+{% endif %}
+</section><!-- /#content -->
 {% endblock content %}

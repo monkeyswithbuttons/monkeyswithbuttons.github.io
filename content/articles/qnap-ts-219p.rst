@@ -4,7 +4,7 @@ QNAP TS-219P
 :author: Greg Trahair
 :category: Hardware
 :slug: qnap-ts-219p
-:status: draft
+:status: published
 
 After long and hard thought over what kind of NAS I would buy to satisfy
 my requirements, I ended up with the QNAP TS-219P.  This was primarily

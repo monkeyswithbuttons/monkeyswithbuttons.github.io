@@ -5,7 +5,7 @@ List Comprehension
 :category: Devops, Featured, Python
 :tags: lists, python
 :slug: list-comprehension
-:status: draft
+:status: published
 
 Why is it better to use list comprehension instead of *map + lambda*?
 

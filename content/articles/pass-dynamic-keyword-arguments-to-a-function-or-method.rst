@@ -4,7 +4,7 @@ Pass dynamic keyword arguments to a function or method
 :author: Greg Trahair
 :category: Python
 :slug: pass-dynamic-keyword-arguments-to-a-function-or-method
-:status: draft
+:status: published
 
 I recently had the problem that I needed to pass a set of generated
 keyword arguments to a function in python. I took a lot of digging, but

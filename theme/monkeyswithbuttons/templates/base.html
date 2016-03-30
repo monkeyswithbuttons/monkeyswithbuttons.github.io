@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="{{ DEFAULT_LANG }}">
 <head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
         {% block head %}
         <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
         <meta charset="utf-8" />
@@ -28,75 +36,36 @@
         {% if TAG_FEED_RSS and tag %}
         <link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_RSS|format(tag.slug) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Tags RSS Feed" />
         {% endif %}
-        <!--Import Google Icon Font-->
-        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <!--Import materialize.css-->
-        <link type="text/css" rel="stylesheet" href="{{ SITEURL }}/theme/css/materialize.min.css"  media="screen,projection"/>
-
-        <!--Let browser know website is optimized for mobile-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         {% endblock head %}
 </head>
 
-<body id="index">
-
-        <!-- Dropdown Structure -->
-        <ul id="dropdown1" class="dropdown-content">
-          {% for dd in ['archives', 'authors'] %}
-          <li><a href="{{ SITEURL }}/{{ dd }}.html">{{ dd|title }}</a></li>
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="{{ SITEURL }}/">{{ SITENAME }} <strong>{{ SITESUBTITLE }}</strong></a></h1>
+        </header><!-- /#banner -->
+        <nav id="menu"><ul>
+        {% for title, link in MENUITEMS %}
+            <li><a href="{{ link }}">{{ title }}</a></li>
+        {% endfor %}
+        {% if DISPLAY_PAGES_ON_MENU %}
+          {% for p in PAGES %}
+            <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
           {% endfor %}
-        </ul>
-
-        <nav>
-          <div class="nav-wrapper blue-grey">
-            <a href="{{ SITEURL }}/" class="brand-logo">{{ SITENAME }}</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-            {% for title, link in MENUITEMS %}
-                <li><a href="{{ link }}">{{ title }}</a></li>
+        {% else %}
+          {% if DISPLAY_CATEGORIES_ON_MENU %}
+            {% for cat, null in categories %}
+              <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
             {% endfor %}
-            {% if DISPLAY_PAGES_ON_MENU %}
-              {% for p in PAGES %}
-                <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
-              {% endfor %}
-            {% else %}
-              {% if DISPLAY_CATEGORIES_ON_MENU %}
-                {% for cat, null in categories %}
-                  <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
-                {% endfor %}
-              {% endif %}
-            {% endif %}
-            {#<!-- Dropdown Trigger -->
-            <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Menu<i class="material-icons right">arrow_drop_down</i></a></li>
-        </ul>#}
-          </div>
-        </nav><!-- /#menu -->
+          {% endif %}
+        {% endif %}
+        </ul></nav><!-- /#menu -->
         {% block content %}
         {% endblock %}
-        <footer class="page-footer blue-grey">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Information</h5>
-                <p class="grey-text text-lighten-4">KvK: 64842673</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
-                <ul>
-                  <li><a class="grey-text text-lighten-3" href="http://getpelican.com/">Pelican</a></li>
-                  <li><a class="grey-text text-lighten-3" href="http://python.org">Python</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-            © 2016 Monkeys with Buttons
-            {# <a class="grey-text text-lighten-4 right" href="#!">More Links</a> #}
-            </div>
-          </div>
-        </footer>
-        <!--Import jQuery before materialize.js-->
-        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <script type="text/javascript" src="{{ SITEURL }}/theme/js/materialize.min.js"></script>
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+        </footer><!-- /#contentinfo -->
 </body>
 </html>

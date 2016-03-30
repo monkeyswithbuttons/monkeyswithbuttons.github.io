@@ -49,3 +49,11 @@ MONTH_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/{date:%b}/index.html'
 DEFAULT_METADATA = {
     'status': 'draft',
 }
+
+INDEX_SAVE_AS = 'blog_index.html'
+
+ARTICLE_URL = 'posts/{date:%Y}/{date:%m}/{slug}/'
+ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/{slug}/index.html'
+
+PAGE_URL = 'pages/{slug}/'
+PAGE_SAVE_AS = 'pages/{slug}/index.html'

@@ -4,7 +4,7 @@ Capacity Planning your Virtualisation Setup
 :author: Greg Trahair
 :category: Devops, System Engineering
 :slug: capacity-planning-your-virtualisation-setup
-:status: draft
+:status: published
 
 | Everybody wants servers now!
 |  Now that servers are virtual, everybody knows you can click a button

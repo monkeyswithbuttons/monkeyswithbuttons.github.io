@@ -5,7 +5,7 @@ JSON from RRD
 :category: Devops
 :tags: rrdtool
 :slug: json-from-rrd
-:status: draft
+:status: published
 
 Towards the end of January 2012, Tobi Oetiker released rrdtool 1.4.6.
 This release contained a community submitted patch to allow export of

@@ -4,7 +4,7 @@ Handy Splunk Searches
 :author: Greg Trahair
 :category: How To
 :slug: handy-splunk-searches
-:status: draft
+:status: published
 
 The idea of this post is only to keep track of the Splunk searches that
 I use frequently that are generic enough to just work on other systems

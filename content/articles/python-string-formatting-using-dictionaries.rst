@@ -5,7 +5,7 @@ Python string formatting using dictionaries
 :category: Devops, Python
 :tags: snippets
 :slug: python-string-formatting-using-dictionaries
-:status: draft
+:status: published
 
 I've started using the string formatting dictionaries and never looked
 back.
