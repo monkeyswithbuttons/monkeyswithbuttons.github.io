@@ -27,10 +27,10 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
          ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('twitter', 'http://twitter.com/monkeybuttons'),
+          ('github', 'http://github.com/monkeyswithbuttons'),)
 
-DEFAULT_PAGINATION = 10
+DEFAULT_PAGINATION = 3
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
@@ -50,6 +50,8 @@ DEFAULT_METADATA = {
     'status': 'draft',
 }
 
+TYPOGRIFY = True
+
 INDEX_SAVE_AS = 'blog_index.html'
 
 ARTICLE_URL = 'posts/{date:%Y}/{date:%m}/{slug}/'
@@ -57,3 +59,8 @@ ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/{slug}/index.html'
 
 PAGE_URL = 'pages/{slug}/'
 PAGE_SAVE_AS = 'pages/{slug}/index.html'
+
+DISPLAY_PAGES_ON_MENU = False
+DISPLAY_CATEGORIES_ON_MENU = False
+
+#TEMPLATE_PAGES = {'pages/main_page.html': 'index.html'}
